@@ -10,7 +10,7 @@ panic: /debug/requests is already registered. You may have two independent copie
 goroutine 1 [running]:
 github.com/zeebe-io/zeebe/clients/go/vendor/golang.org/x/net/trace.init.0()
 	/go/src/github.com/zeebe-io/zeebe/clients/go/vendor/golang.org/x/net/trace/trace.go:116 +0x14a
-``
+```
 
 
 **This is a prototype for a POC - it is not production ready!**
