@@ -1,6 +1,18 @@
 # ext-zeebe
 [Fn](https://fnproject.io/) extension for [Zeebe.io](http://zeebe.io/)
 
+# WARNING
+This repository contains the intended way of installing Fn extensions is building an Fn Server using the Fn CLI and an ext.yaml file referencing the public repository of the Fn extension. However, this method currently does not work at this time because of Go dependency conflicts. You may use https://github.com/ArtunSubasi/fn-with-zeebe-extension instead. If you have any idea about solving the dependency problem, feel free to contact me. Until then, this repository will not be maintained.
+
+```
+panic: /debug/requests is already registered. You may have two independent copies of golang.org/x/net/trace in your binary, trying to maintain separate state. This may involve a vendored copy of golang.org/x/net/trace.
+
+goroutine 1 [running]:
+github.com/zeebe-io/zeebe/clients/go/vendor/golang.org/x/net/trace.init.0()
+	/go/src/github.com/zeebe-io/zeebe/clients/go/vendor/golang.org/x/net/trace/trace.go:116 +0x14a
+``
+
+
 **This is a prototype for a POC - it is not production ready!**
 
 Features:
